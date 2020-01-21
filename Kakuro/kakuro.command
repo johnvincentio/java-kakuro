@@ -11,4 +11,3 @@ MYCP=$DEV_HOME
 java -cp $MYCP io.johnvincent.kakuro.Appgui
 #
 echo "end"
-

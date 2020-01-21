@@ -11,6 +11,20 @@ create-repo java-kakuro
 
 Remove non-relevant files.
 
+## Add `README.md`
+
+```
+cd java-kakuro
+```
+
+Create `README.md`
+
+```
+For details, see Kakuro/README.md
+```
+
+## Start Eclipse
+
 in Finder
 
 * select `/Users/jv/Desktop/MyDevelopment/github/java/Games/java-kakuro`
@@ -40,4 +54,34 @@ Select `src`
 
 Copy code to this package and change package names.
 
+## Script file
+
+`/Users/jv/Desktop/MyDevelopment/github/java/Games/java-kakuro/Kakuro/kakuro.command`
+
+```
+#!/bin/sh
+#
+# script to run java app kakuro
+#
+echo "begin"
+#
+DEV_HOME=/Users/jv/Desktop/MyDevelopment/github/java/Games/java-kakuro/Kakuro/classes
+#
+MYCP=$DEV_HOME
+#
+java -cp $MYCP io.johnvincent.kakuro.Appgui
+#
+echo "end"
+```
+
+## Create Alias
+
+In Finder
+
+* select `kakuro.command`
+/Users/jv/Desktop/MyDevelopment/github/repo_shell_scripts/mac/JVTools
+
 # END
+
+
+
