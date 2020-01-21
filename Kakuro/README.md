@@ -1,6 +1,6 @@
 # Kakuro
 
-At Github, create repository `kakuro`
+At Github, create repository `java-kakuro`
 
 repo: https://github.com/johnvincentio/java-kakuro
 
@@ -56,7 +56,7 @@ Copy code to this package and change package names.
 
 ## Script file
 
-`/Users/jv/Desktop/MyDevelopment/github/java/Games/java-kakuro/Kakuro/kakuro.command`
+`/Users/jv/Desktop/MyDevelopment/github/java/Games/java-kakuro/Kakuro/app.command`
 
 ```
 #!/bin/sh
@@ -78,8 +78,10 @@ echo "end"
 
 In Finder
 
-* select `kakuro.command`
-/Users/jv/Desktop/MyDevelopment/github/repo_shell_scripts/mac/JVTools
+* select `app.command`
+* right click, Make Alias
+* rename to `kakuro.command`
+* move alias to `/Users/jv/Desktop/MyDevelopment/github/repo_shell_scripts/mac/JVTools/`
 
 # END
 
