@@ -5,7 +5,7 @@ At Github, create repository `java-kakuro`
 repo: https://github.com/johnvincentio/java-kakuro
 
 ```
-cd /Users/jv/Desktop/MyDevelopment/github/java
+cd /Users/jv/Desktop/MyDevelopment/github/java/Games
 create-repo java-kakuro
 ```
 
