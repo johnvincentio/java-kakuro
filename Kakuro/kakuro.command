@@ -8,7 +8,7 @@ DEV_HOME=/Users/jv/Desktop/MyDevelopment/github/java/Games/java-kakuro/Kakuro/cl
 #
 MYCP=$DEV_HOME
 #
-java -cp $MYCP com.idc.kakuro.Appgui
+java -cp $MYCP io.johnvincent.kakuro.Appgui
 #
 echo "end"
 
