@@ -81,9 +81,5 @@ In Finder
 * select `app.command`
 * right click, Make Alias
 * rename to `kakuro.command`
-* move alias to `/Users/jv/Desktop/MyDevelopment/github/repo_shell_scripts/mac/JVTools/`
-
-# END
-
-
+* move alias to `/Users/jv/Desktop/MyDevelopment/github/repo_shell_scripts/mac/unix-scripts/bin/`
 
