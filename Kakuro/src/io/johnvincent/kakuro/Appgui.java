@@ -25,6 +25,7 @@ public class Appgui extends JFrame implements ActionListener {
 				doStop();
 			}
 		});
+		setTitle("Kakaro");
 		setSize(700,900);
 		pack();
 		setVisible(true);			
