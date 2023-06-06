@@ -17,7 +17,7 @@ public class Appgui extends JFrame implements ActionListener {
 	private JButton m_btnCalculate;
 	private JButton m_btnExit;
 
-	public static void main (String[] args) {(new Appgui()).doApp();}
+	public static void main(String[] args) {(new Appgui()).doApp();}
 	private void doApp() {
 		setContentPane(makeContentPane());
 		this.addWindowListener (new WindowAdapter() {
@@ -64,7 +64,7 @@ public class Appgui extends JFrame implements ActionListener {
 		pane.add(lowPane,BorderLayout.SOUTH);			
 		return pane;
 	}	
-	public void actionPerformed (ActionEvent e) {
+	public void actionPerformed(ActionEvent e) {
 		Object source = e.getSource();
 		if (source instanceof JButton) {
 			if (source == m_btnCalculate) {
@@ -98,12 +98,12 @@ public class Appgui extends JFrame implements ActionListener {
 			setMessagesArea (answer.toString());
 		}
 	}
-	public static int makeInt (String str) {
+	public static int makeInt(String str) {
 		int num = Integer.parseInt(str);
 		if (num < 0) return -num;
 		return num;
 	}
-	public void setMessagesArea (final String msg) {
+	public void setMessagesArea(final String msg) {
 		SwingUtilities.invokeLater (
 			new Runnable() {
 				public void run() {
@@ -115,7 +115,7 @@ public class Appgui extends JFrame implements ActionListener {
 			}
 		);
 	}
-	public void clearMessagesArea () {
+	public void clearMessagesArea() {
 		SwingUtilities.invokeLater (
 			new Runnable() {
 				public void run() {

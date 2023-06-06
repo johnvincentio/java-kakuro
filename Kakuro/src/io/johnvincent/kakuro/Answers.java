@@ -28,7 +28,7 @@ public class Answers {
 	 * 
 	 * @param item	a perspective solution
 	 */
-	public void add (Answer answer) {
+	public void add(Answer answer) {
 		if (! isExists (answer)) m_list.add(answer);
 	}
 
@@ -38,7 +38,7 @@ public class Answers {
 	 * @param answer		wheel settings
 	 * @return				true if already been added
 	 */
-	private boolean isExists (Answer answer) {
+	private boolean isExists(Answer answer) {
 		Answer item;
 		Iterator<Answer> iter = getAnswers();
 		while (iter.hasNext()) {

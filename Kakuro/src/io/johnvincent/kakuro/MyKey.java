@@ -3,7 +3,7 @@ package io.johnvincent.kakuro;
 public class MyKey {
 	private int squares;
 	private int total;
-	public MyKey (int squares, int total) {
+	public MyKey(int squares, int total) {
 		this.squares = squares;
 		this.total = total;
 	}
