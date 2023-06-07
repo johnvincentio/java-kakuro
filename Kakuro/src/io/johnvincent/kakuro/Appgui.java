@@ -15,6 +15,7 @@ public class Appgui extends JFrame implements ActionListener {
 	private JTextField m_textSquares = new JTextField(3);
 	private JTextArea m_messagesArea;
 	private JButton m_btnCalculate;
+	private JButton m_btnClear;
 	private JButton m_btnExit;
 
 	public static void main(String[] args) {(new Appgui()).doApp();}
@@ -52,9 +53,12 @@ public class Appgui extends JFrame implements ActionListener {
 		JPanel lowPane = new JPanel();
 		m_btnCalculate = new JButton("Start");
 		m_btnCalculate.addActionListener(this);
+		m_btnClear = new JButton("Clear");
+		m_btnClear.addActionListener(this);
 		m_btnExit = new JButton("Exit");
 		m_btnExit.addActionListener(this);
 		lowPane.add(m_btnCalculate);
+		lowPane.add(m_btnClear);
 		lowPane.add(m_btnExit);	
 
 		JPanel pane = new JPanel();
@@ -70,13 +74,15 @@ public class Appgui extends JFrame implements ActionListener {
 			if (source == m_btnCalculate) {
 				doCalculate();
 			}
+			else if (source == m_btnClear) {
+				clearMessagesArea();
+			}
 			else if (source == m_btnExit) {
 				doStop();
 			}
 		}
 	}
 	private void doCalculate() {
-		clearMessagesArea();
 		int squares = 0;
 		int count = 0;
 		try {
@@ -88,15 +94,16 @@ public class Appgui extends JFrame implements ActionListener {
 			setMessagesArea ("Please check them and try again.");
 			return;
 		}
-		setMessagesArea("Numbers are OK\n");
+		setMessagesArea(" Count: "+ count+ " Squares: "+squares+"\n");
 		Answers all = (new Utils(m_dataStore, squares, count)).doCalculate();
-		setMessagesArea("Solutions: "+all.getSize()+"\n");
+		setMessagesArea(" Solutions: "+all.getSize()+"\n");
 		Answer answer;
 		Iterator<Answer> iter = all.getAnswers();
 		while (iter.hasNext()) {
 			answer = iter.next();
-			setMessagesArea (answer.toString());
+			setMessagesArea(" "+answer.toString());
 		}
+		setMessagesArea("\n --------------------------- \n");
 	}
 	public static int makeInt(String str) {
 		int num = Integer.parseInt(str);
