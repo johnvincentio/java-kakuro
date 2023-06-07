@@ -1,5 +1,16 @@
 # Kakuro
 
+* [KakuroConquest](https://www.kakuroconquest.com/)
+* [Kakuro](https://www.kakuros.com/)
+* [Puzzle Kakuro](https://www.puzzle-kakuro.com/0
+
+Use this application as an aid:
+
+* Count = the number provided
+* Squares = the number of squares used to create the number provided
+
+## Github
+
 At Github, create repository `java-kakuro`
 
 repo: https://github.com/johnvincentio/java-kakuro

@@ -34,7 +34,7 @@ public class Appgui extends JFrame implements ActionListener {
 	public void doStop() {System.exit(0);}
 	private Container makeContentPane() {
 		JPanel boardPanel = new JPanel();  // panel for the squares
-		boardPanel.add (new JLabel("Count: "));
+		boardPanel.add (new JLabel("Count:"));
 		boardPanel.add (m_textCount);
 		boardPanel.add (new JLabel("Squares:"));
 		boardPanel.add (m_textSquares);
@@ -88,9 +88,9 @@ public class Appgui extends JFrame implements ActionListener {
 			setMessagesArea ("Please check them and try again.");
 			return;
 		}
-		setMessagesArea("Numbers are OK");
+		setMessagesArea("Numbers are OK\n");
 		Answers all = (new Utils(m_dataStore, squares, count)).doCalculate();
-		setMessagesArea("Solutions: "+all.getSize());
+		setMessagesArea("Solutions: "+all.getSize()+"\n");
 		Answer answer;
 		Iterator<Answer> iter = all.getAnswers();
 		while (iter.hasNext()) {

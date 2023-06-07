@@ -39,4 +39,8 @@ public class MyKey {
 			return false;
 		return true;
 	}
+	
+	public String toString() {
+		return "(MyKey; squares "+squares+" total "+total+")";
+	}
 }

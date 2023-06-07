@@ -131,9 +131,12 @@ public class Answer {
 	 */
 	public String toString() {
 		StringBuffer buf = new StringBuffer();
+		boolean first = true;
 		for (int i = 0; i < m_wheels; i++) {
+			if (! first) buf.append(", ");
+			first = false;
 			buf.append(m_anAnswer[i]);
 		}
-		return buf.toString();
+		return "("+buf.toString()+")";
 	}
 }

@@ -6,7 +6,6 @@ import java.util.List;
 import java.util.Iterator;
 
 public class Answers {
-	// List of solutions
 	private List<Answer> m_list = new ArrayList<Answer>();
 
 	/**
@@ -50,6 +49,14 @@ public class Answers {
 
 	@Override
 	public String toString() {
-		return "Answers [m_list=" + m_list + "]";
+		StringBuffer buf = new StringBuffer();
+		boolean first = true;
+		for (int i = 0; i < m_list.size(); i++) {
+			Answer item = m_list.get(i);
+			if (! first) buf.append(", ");
+			first = false;
+			buf.append(item.toString());
+		}
+		return "("+buf.toString()+")";
 	}
 }
