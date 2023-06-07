@@ -90,11 +90,11 @@ public class Appgui extends JFrame implements ActionListener {
 			count = makeInt(m_textCount.getText());
 		}
 		catch (Exception ex) {
-			setMessagesArea ("Unable to make sense of your numbers.");
-			setMessagesArea ("Please check them and try again.");
+			setMessagesArea("Unable to make sense of your numbers.");
+			setMessagesArea("Please check them and try again.");
 			return;
 		}
-		setMessagesArea(" Count: "+ count+ " Squares: "+squares+"\n");
+		setMessagesArea(" Count: "+ count+ ", Squares: "+squares+"\n");
 		Answers all = (new Utils(m_dataStore, squares, count)).doCalculate();
 		setMessagesArea(" Solutions: "+all.getSize()+"\n");
 		Answer answer;
