@@ -2,12 +2,9 @@
 #
 # script to run java app kakuro
 #
-echo "begin"
+DEV_HOME=/Users/jv/Desktop/MyDevelopment/github/java/Games/java-kakuro/Kakuro
 #
-DEV_HOME=/Users/jv/Desktop/MyDevelopment/github/java/Games/java-kakuro/Kakuro/classes
-#
-MYCP=$DEV_HOME
+MYCP=$DEV_HOME/classes
 #
 java -cp $MYCP -Xdock:name="Kakuro" io.johnvincent.kakuro.Appgui
 #
-echo "end"
